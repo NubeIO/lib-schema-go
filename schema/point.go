@@ -132,3 +132,12 @@ type HistoryCOVThreshold struct {
 	Title   string   `json:"title" default:"History COV Threshold"`
 	Default *float64 `json:"default" default:"0.01"`
 }
+
+type MeasurementUnit struct {
+	Type     string   `json:"type" default:"string"`
+	Title    string   `json:"title" default:"Units"`
+	Help     string   `json:"help" default:"Measurement Units"`
+	Default  string   `json:"default" default:""`
+	Options  []string `json:"enum" default:"[]"`
+	EnumName []string `json:"enumNames" default:"[]"`
+}
