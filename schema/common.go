@@ -170,3 +170,10 @@ type DeviceType struct {
 	Options []string `json:"enum" default:"[\"cloud\",\"edge-28\",\"rubix-compute\",\"rubix-compute-vpn\",\"rubix-compute-lorawan\",\"rubix-compute-lorawan-vpn\",\"rubix-compute-io\"]"`
 	Default string   `json:"default" default:"rubix-compute"`
 }
+
+type DisableGrouping struct {
+	Type     string `json:"type" default:"boolean"`
+	Title    string `json:"title" default:"Disable Grouping"`
+	Default  bool   `json:"default" default:"false"`
+	ReadOnly bool   `json:"readOnly" default:"false"`
+}
